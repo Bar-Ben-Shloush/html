@@ -1,0 +1,61 @@
+body{
+  background-color:  #283149;
+}
+
+#title{
+  color: white;
+  font-size: 6rem;
+  text-align: center;
+}
+
+.image{
+  display: flex;
+  margin-top: 150px;
+  justify-content:space-evenly;
+}
+.image div{
+  position: relative;
+}
+
+.image img {
+  width: 200px;
+  height: 200px;
+  border: 10px solid #404B69; /* דוגמה: הוספת מסגרת */
+  background-color: white;
+  
+
+}
+.click {
+  width: 200px;
+  height: 200px;
+  border: 10px solid #404B69; /* דוגמה: הוספת מסגרת */
+  background-color: white;
+  transform: scale(0.95); /* מקטין את התמונה כשנלחץ עליה */
+  box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.3); /* צל פנימי כשהתמונה נלחצת */
+
+}
+
+
+.image .letter{
+  position: absolute;
+
+  top: 50%;  /* ממרכז את האות לאורך האנכי */
+  left: 50%; /* ממרכז את האות לאורך האופקי */
+  transform: translate(-50%, -50%); /* מתקן את המיקום של האות למרכז אמיתי */
+  font-size: 4rem;
+  color: #404B69;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #fff; /* צל לאות */
+  pointer-events: none; /* מונע התערבות של העכבר באות */
+  
+  
+}
+
+footer{
+  display: flex;
+  margin-top: 150px;
+  color: white;
+  font-size: 2rem;
+  justify-content: center;
+}
+/*#DBEDF3; #DA0463; #404B69;red;#283149;
